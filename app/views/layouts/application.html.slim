@@ -18,7 +18,7 @@
         <a href="mailto:PQFeedback@digital.justice.gov.uk?Subject=PQ%20Tracker">feedback</a>&nbsp;
       | will help us to improve it.
 
-    - if HostEnv.is_staging?
+    - unless HostEnv.is_live?
       .staging_banner
         | This is not the live Parliamentary Questions Tracker environment
 
